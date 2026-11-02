@@ -1,0 +1,27 @@
+Copyright (c) 2026 Melissa Aristizabal. All rights reserved.
+
+This repository is public so that its source code can be viewed and evaluated
+(for example, by recruiters or collaborators). Viewing the code does not grant
+any license to it.
+
+Without prior written permission from the copyright holder, you may not copy,
+modify, merge, publish, distribute, sublicense, sell, host, or otherwise use
+this software or any substantial portion of it, in whole or in part, for any
+purpose, commercial or non-commercial.
+
+Third-party components keep their own licenses:
+- js/vendor/firebase-13.1.0.js — Firebase JavaScript SDK, Apache License 2.0
+  (https://github.com/firebase/firebase-js-sdk/blob/main/LICENSE).
+
+The sample data included in the app is fictional.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY ARISING FROM THE USE OF THE SOFTWARE.
+
+Contact: https://github.com/melimape
+
+---
+
+Todos los derechos reservados. El código es público para que se pueda revisar,
+pero no se puede copiar, modificar, distribuir ni usar sin permiso por escrito.

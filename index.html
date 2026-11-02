@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Cadence · Projects, deliveries & money</title>
+  <meta name="description" content="Cadence: proyectos, entregas, clientes y finanzas para personas independientes y pequeños emprendimientos. Se instala en el iPhone y funciona sin internet.">
+  <meta name="theme-color" content="#14382B">
+
+  <!-- iPhone: install from Safari → Share → Add to Home Screen -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Cadence">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <a href="#home" data-nav-to="home" class="brand-logo" aria-label="Cadence"><img src="icons/icon.svg" alt="" width="32" height="32"></a>
+      <div class="brand-text"><strong>Cadence</strong><button id="space-btn" class="space-btn" type="button"></button></div>
+    </div>
+    <div class="top-actions">
+      <span id="cloud-status" class="cloud-status" role="img" hidden></span>
+      <button id="top-help" class="icon-btn on-dark" type="button"></button>
+      <button id="settings-btn" class="icon-btn on-dark" type="button"></button>
+    </div>
+  </header>
+
+  <nav id="nav" class="nav" aria-label="Main"></nav>
+  <main id="view" tabindex="-1"></main>
+  <button id="fab" class="fab" type="button"></button>
+
+  <dialog id="sheet" class="sheet"><div id="sheet-body"></div></dialog>
+
+  <dialog id="helpdlg" class="helpdlg">
+    <form method="dialog">
+      <h2 id="help-title"></h2>
+      <div id="help-body"></div>
+      <div class="sheet-actions"><span class="spacer"></span><button class="btn" value="ok" id="help-ok">OK</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="confirm" class="confirm">
+    <form method="dialog">
+      <p id="confirm-msg"></p>
+      <div class="sheet-actions"><span class="spacer"></span>
+        <button class="btn ghost" value="cancel" id="confirm-cancel"></button>
+        <button class="btn" value="ok" id="confirm-ok"></button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/templates.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/cloud.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

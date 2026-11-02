@@ -1,0 +1,16 @@
+rules_version = '2';
+
+// Cadence · Firestore security rules
+// Each signed-in person can read and write only their own folder: users/{their id}/...
+// Nobody else (not even other Cadence users) can see it.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{userId}/{document=**} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    // everything else is closed
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
