@@ -10,12 +10,12 @@
  * These values are not secret: they only identify the project. What protects the
  * data is firestore.rules (each person can only read and write their own data). */
 window.FIREBASE_CONFIG = {
-  apiKey: '',
-  authDomain: '',
-  projectId: '',
-  storageBucket: '',
-  messagingSenderId: '',
-  appId: ''
+  apiKey: 'AIzaSyDB0akL97cBPMDJ8YmCBg1T0Wlk4hUfMOE',
+  authDomain: 'cadence-ca211.firebaseapp.com',
+  projectId: 'cadence-ca211',
+  storageBucket: 'cadence-ca211.firebasestorage.app',
+  messagingSenderId: '687293335861',
+  appId: '1:687293335861:web:76c93ad0a2b1eda0d1e47c'
 };
 
 /* 2) Privacy policy contact (shown in the app → Settings → Privacy policy).
