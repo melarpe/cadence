@@ -1,6 +1,7 @@
+/* © 2026 Melarpe · Melissa Aristizabal. All rights reserved. Not open source: see LICENSE. */
 /* Cadence · service worker: makes the app open offline.
  * Bump VERSION whenever you change a file so phones download the new one. */
-const VERSION = 'cadence-v3.0.3';
+const VERSION = 'cadence-v3.0.5';
 const SHELL = [
   './', './index.html', './manifest.webmanifest', './css/styles.css',
   './js/i18n.js', './js/templates.js', './js/firebase-config.js', './js/store.js', './js/cloud.js', './js/app.js',

@@ -1,3 +1,4 @@
+/* © 2026 Melarpe · Melissa Aristizabal. All rights reserved. Not open source: see LICENSE. */
 /* Cadence · UI (v2)
  * Plain JavaScript, no build step. Each view returns an HTML string; clicks are handled
  * by one delegated listener that reads data-action attributes. */
@@ -983,7 +984,7 @@
           <header class="card-head"><h2>${t('about')}</h2></header>
           <button class="link" data-nav-to="privacy">🔒 ${t('privacyTitle')} →</button>
           <p class="muted small">${t('privacyShort')}</p>
-          <p class="muted small">Cadence v3.0 · <a href="https://github.com/melimape/cadence" target="_blank" rel="noopener">GitHub</a></p>
+          <p class="muted small">Cadence v3.0 · Melarpe · <a href="https://github.com/melarpe/cadence" target="_blank" rel="noopener">GitHub</a></p>
         </section>
       </div>`;
   }

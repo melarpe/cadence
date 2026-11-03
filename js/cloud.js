@@ -1,3 +1,4 @@
+/* © 2026 Melarpe · Melissa Aristizabal. All rights reserved. Not open source: see LICENSE. */
 /* Cadence · Firebase sync (optional)
  *
  * In plain words:

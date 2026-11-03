@@ -1,3 +1,4 @@
+/* © 2026 Melarpe · Melissa Aristizabal. All rights reserved. Not open source: see LICENSE. */
 /* Cadence · all visible text, in Spanish and English.
  * Templates can override some words (see `terms` in templates.js).
  * help   → what the "?" buttons show

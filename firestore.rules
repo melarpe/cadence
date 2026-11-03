@@ -1,4 +1,5 @@
 rules_version = '2';
+// © 2026 Melarpe · Melissa Aristizabal. All rights reserved. Not open source: see LICENSE.
 
 // Cadence · Firestore security rules
 // Each signed-in person can read and write only their own folder: users/{their id}/...

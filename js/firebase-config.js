@@ -1,3 +1,4 @@
+/* © 2026 Melarpe · Melissa Aristizabal. All rights reserved. Not open source: see LICENSE. */
 /* Cadence · settings for whoever runs the app (the admin). Users never see this file.
  *
  * 1) Firebase connection
@@ -22,5 +23,5 @@ window.FIREBASE_CONFIG = {
  * If it is empty, the policy tells users to contact the person who shared the app. */
 window.APP_INFO = {
   owner: 'Melissa Aristizabal',
-  contactEmail: ''
+  contactEmail: 'hello.melarpe@gmail.com'
 };

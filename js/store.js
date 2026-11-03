@@ -1,3 +1,4 @@
+/* © 2026 Melarpe · Melissa Aristizabal. All rights reserved. Not open source: see LICENSE. */
 /* Cadence · data store with spaces
  *
  * A "space" is one separate set of data with its own template, for example

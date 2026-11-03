@@ -1,6 +1,8 @@
 # Cadence · Projects, deliveries & money for independent work
 
-**[Leer en español](README.es.md)** · **[Live demo](https://melimape.github.io/cadence/)**
+**[Leer en español](README.es.md)** · **[Open the app](https://melarpe.github.io/cadence/)**
+
+> © 2026 Melarpe · Melissa Aristizabal. **Not open source:** the code is published for review as part of my portfolio. All rights reserved (see [LICENSE](LICENSE)).
 
 Cadence is an installable web app (PWA) to keep **tasks, deadlines, appointments and money** organized from the phone, in seconds. It works for personal life, for a job, and for a small business or freelance work. One person can keep each of these in its own **space** and switch with one tap.
 
@@ -52,7 +54,7 @@ So Cadence is general but direct: a **template** per space switches the wording,
 
 | Decision | Why |
 |---|---|
-| Vanilla HTML, CSS, JS. No build step | Runs anywhere, free hosting on GitHub Pages, easy to read and review. |
+| Vanilla HTML, CSS, JS. No build step | Runs anywhere, free hosting on GitHub Pages, easy to review. |
 | PWA (manifest + service worker) | Feels like an app on iPhone, Android, Windows and Mac without an app store; opens offline. Captures `beforeinstallprompt` for a one-tap install. |
 | Local-first: `localStorage` is the source the UI reads | Instant on a slow connection; works with no account at all. |
 | Firebase Auth + Firestore (free Spark plan) for sync | Free with no card, real-time between devices, per-user security rules. Replaced a Google Sheets backend from v1: no per-user setup, faster, multi-user. |
@@ -107,27 +109,13 @@ cadence/
 └── docs/                   screenshots
 ```
 
-## Run locally
+## Accounts and security
 
-```bash
-git clone https://github.com/melimape/cadence.git
-cd cadence
-python3 -m http.server 8000      # open http://localhost:8000
-```
-
-## Firebase setup (optional, ~10 minutes)
-
-1. [console.firebase.google.com](https://console.firebase.google.com) → **Add project** (Spark plan, no card).
-2. **Add app → Web**. Copy the `firebaseConfig` values into `js/firebase-config.js`.
-3. **Authentication → Sign-in method:** enable *Email/Password* and *Google*.
-4. **Authentication → Settings → Authorized domains:** add `melimape.github.io`.
-5. **Firestore Database → Create database** (production mode).
-6. **Firestore → Rules:** paste [`firestore.rules`](firestore.rules) and publish.
-7. Push, and bump `VERSION` in `sw.js` so installed apps update.
-
-End users never see setup steps: without Firebase, Settings only says their data is saved on this device, and the account guide in Help appears only once accounts are configured.
-
-The config values are public by design; the rules are what protect the data. The detailed Spanish guide with every click is in [README.es.md](README.es.md#3-configurar-firebase-cuentas-y-sincronización).
+- **Firebase Authentication** (email/password and Google) and **Cloud Firestore** on the free Spark plan.
+- Every item is one document under `users/{uid}/…`; [`firestore.rules`](firestore.rules) lets each person read and write only their own folder.
+- Config values are public by design; the rules are what protect the data.
+- End users never see setup steps: without Firebase, Settings only says data is saved on this device.
+- Sign-up requires accepting the in-app privacy policy; date and version are stored in the user's own folder.
 
 ## How it was tested
 
@@ -142,7 +130,7 @@ The config values are public by design; the rules are what protect the data. The
 
 ## License
 
-All rights reserved © 2026 Melissa Aristizabal. The source is public so it can be reviewed; it may not be copied, modified, redistributed or used commercially without written permission. See [LICENSE](LICENSE). Sample data is fictional.
+All rights reserved © 2026 Melarpe · Melissa Aristizabal. The source is public for review only; it may not be copied, modified, redistributed, deployed or used commercially without written permission. See [LICENSE](LICENSE). Sample data is fictional.
 
 ---
-Built by **Melissa Aristizabal** · Energy Engineer (UNILA) · M.Sc. student in Mechanical Engineering, UFRGS · [GitHub](https://github.com/melimape)
+Built by **Melissa Aristizabal** · Energy Engineer (UNILA) · M.Sc. student in Mechanical Engineering, UFRGS · [GitHub](https://github.com/melimape) · A **Melarpe** app
