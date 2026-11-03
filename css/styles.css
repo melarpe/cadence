@@ -644,3 +644,6 @@ details.card > summary { cursor: pointer; font-weight: 600; }
 .prose li { margin-bottom: 4px; }
 .prose a { color: var(--green-600); font-weight: 600; }
 .help-foot { margin-top: 18px; }
+
+/* Onboarding: breathing room around "Start with one…" */
+.onboard > .hint { margin: 18px auto 20px; max-width: 36ch; font-size: 13.5px; line-height: 1.45; }
